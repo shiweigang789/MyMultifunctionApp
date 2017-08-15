@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion COMPILE_SDK_VERSION as Integer
+  buildToolsVersion BUILD_TOOLS_VERSION
+
+  defaultConfig {
+    minSdkVersion MIN_SDK_VERSION
+  }
+
+  lintOptions {
+    textReport true
+  }
+}
+
+//dependencies {
+//  testCompile deps.junit
+//  testCompile deps.truth
+//  testCompile deps.robolectric
+//  testCompile deps.mockito
+//  testCompile deps.json
+//}
+//
+//apply from: rootProject.file('gradle/maven_push.gradle')
