@@ -13,7 +13,6 @@ public class CrashHandler implements UncaughtExceptionHandler{
     private static final String TAG = "CrashHandler";
     public static final Boolean DEBUG = BuildConfig.DEBUG;
 
-
     @Override
     public void uncaughtException(Thread thread, Throwable throwable) {
 

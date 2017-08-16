@@ -11,14 +11,15 @@ android {
   lintOptions {
     textReport true
   }
+  buildToolsVersion '25.0.0'
 }
 
-//dependencies {
-//  testCompile deps.junit
-//  testCompile deps.truth
-//  testCompile deps.robolectric
-//  testCompile deps.mockito
+dependencies {
+  testCompile 'junit:junit:4.12'
+  testCompile 'com.google.truth:truth:0.34'
+  testCompile 'org.robolectric:robolectric:3.1'
+  testCompile 'org.mockito:mockito-all:2.0.2-beta'
 //  testCompile deps.json
-//}
+}
 //
 //apply from: rootProject.file('gradle/maven_push.gradle')
